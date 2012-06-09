@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HealthTracker.Administration.ViewModels.AdminModuleViewModel" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQAAAgAgIAAAIAAAAQAAAgAAASABCAAAEACABAAAA=</HashCode>
+      <FileName>ViewModels\AdminModuleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.AllFoodGroupsViewModel" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ViewModels\AllFoodGroupsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.AllFoodItemsViewModel" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAQAAAAAAAQAAAAAAEAAAAAA=</HashCode>
+      <FileName>ViewModels\AllFoodItemsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.AllMealTypesViewModel" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQYAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AllMealTypesViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.ClickableTreeNodeViewModel" Collapsed="true">
+    <Position X="2" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ClickableTreeNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.DataObjectCollectionNodeViewModel" Collapsed="true">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\DataObjectCollectionNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.FoodGroupNodeViewModel" Collapsed="true">
+    <Position X="11" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FoodGroupNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.FoodGroupViewModel" Collapsed="true">
+    <Position X="4.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAAAAAAAAAAAAAEQAAAEAAgAAAEABAAAAAAA=</HashCode>
+      <FileName>ViewModels\FoodGroupViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.FoodItemNodeViewModel" Collapsed="true">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FoodItemNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.FoodItemViewModel" Collapsed="true">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAYQAAAAEBQAAQQAAAEQAAAEAAiEAAEABEAAAAAI=</HashCode>
+      <FileName>ViewModels\FoodItemViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.MealTemplateNodeViewModel" Collapsed="true">
+    <Position X="8.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MealTemplateNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.MealTemplateViewModel" Collapsed="true">
+    <Position X="13.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAIAAAAAABAAACAgAAEQAAAEAAgAAAEAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MealTemplateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.MealTypeNodeViewModel" Collapsed="true">
+    <Position X="4.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MealTypeNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.MealTypeViewModel" Collapsed="true">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAAAAAAAAAAAAAEQAAAEAAgAAAEABAAAAAAA=</HashCode>
+      <FileName>ViewModels\MealTypeViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.MealViewModel" Collapsed="true">
+    <Position X="11.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAAAAAAAACAAAAAAAAAEAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MealViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.MealViewModelBase" Collapsed="true">
+    <Position X="12.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAARABAAgBAAICQAAAAQABAIEIAACAAABAAAqkAI=</HashCode>
+      <FileName>ViewModels\MealViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.ServingViewModel&lt;T&gt;" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAARAACBAAAQARKAhAAAIAgAASAAAAAggBgAAgAAQ=</HashCode>
+      <FileName>ViewModels\ServingViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthTracker.Administration.ViewModels.TreeNodeViewModel" Collapsed="true">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIQAAAAAAEAIAAAAEAASAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TreeNodeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20420732-D8E2-4CE6-B41B-E610E682BBBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitTests.Administration</RootNamespace>
+    <AssemblyName>UnitTests.Administration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\Library.Prism\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\Library.Moq\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminModuleViewModelTest.cs" />
+    <Compile Include="FoodGroupNodeViewModelTest.cs" />
+    <Compile Include="FoodGroupViewModelTest.cs" />
+    <Compile Include="FoodItemNodeViewModelTest.cs" />
+    <Compile Include="FoodItemViewModelTest.cs" />
+    <Compile Include="MealTemplateNodeViewModelTest.cs" />
+    <Compile Include="MealTemplateViewModelTest.cs" />
+    <Compile Include="MealTypeNodeViewModelTest.cs" />
+    <Compile Include="MealTypeViewModelTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServingViewModelTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthTracker.Administration\HealthTracker.Administration.csproj">
+      <Project>{C1F01840-7351-4512-B318-1BA85FE9D929}</Project>
+      <Name>HealthTracker.Administration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthTracker.BaseClasses\HealthTracker.BaseClasses.csproj">
+      <Project>{D067C306-E6C2-4C78-B234-9B83918DF285}</Project>
+      <Name>HealthTracker.BaseClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthTracker.Configuration\HealthTracker.Configuration.csproj">
+      <Project>{CA5CDEA3-2FC3-4160-9E41-8E57A8B692FB}</Project>
+      <Name>HealthTracker.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthTracker.DataRepository\HealthTracker.DataRepository.csproj">
+      <Project>{6977A8E7-7B15-4041-A031-C9F3FB737522}</Project>
+      <Name>HealthTracker.DataRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthTracker.Infrastructure\HealthTracker.Infrastructure.csproj">
+      <Project>{B268B52E-1894-4E61-B4D2-1EAB648597BE}</Project>
+      <Name>HealthTracker.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitTests.Support\UnitTests.Support.csproj">
+      <Project>{696E3760-77A4-4B24-BC3C-A7EC37EFC0AE}</Project>
+      <Name>UnitTests.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6977A8E7-7B15-4041-A031-C9F3FB737522}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthTracker.DataRepository</RootNamespace>
+    <AssemblyName>HealthTracker.DataRepository</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\Library.Prism\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataRepositoryModule.cs" />
+    <Compile Include="Interfaces\IDataRepository.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\DataObject.cs" />
+    <Compile Include="Models\FoodGroup.cs" />
+    <Compile Include="Models\FoodItem.cs" />
+    <Compile Include="Models\Meal.cs" />
+    <Compile Include="Models\MealBase.cs" />
+    <Compile Include="Models\MealTemplate.cs" />
+    <Compile Include="Models\MealType.cs" />
+    <Compile Include="Models\RepositoryObjectBase.cs" />
+    <Compile Include="Models\Serving.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DataRepository.cs" />
+    <Compile Include="Interfaces\RepositoryObjectEventArgs.cs" />
+    <Compile Include="ViewModels\AllDataObjectViewModelBase.cs" />
+    <Compile Include="ViewModels\AllFoodGroupsViewModel.cs" />
+    <Compile Include="ViewModels\AllFoodItemsViewModel.cs" />
+    <Compile Include="ViewModels\AllMealTemplatesViewModel.cs" />
+    <Compile Include="ViewModels\AllMealTypesViewModel.cs" />
+    <Compile Include="ViewModels\DataObjectCollectionNodeViewModel.cs" />
+    <Compile Include="ViewModels\DataRepositoryObjectViewModel.cs" />
+    <Compile Include="ViewModels\MealViewModelBase.cs" />
+    <Compile Include="ViewModels\ServingViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\HealthTracker.BaseClasses\HealthTracker.BaseClasses.csproj">
+      <Project>{D067C306-E6C2-4C78-B234-9B83918DF285}</Project>
+      <Name>HealthTracker.BaseClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthTracker.Configuration\HealthTracker.Configuration.csproj">
+      <Project>{CA5CDEA3-2FC3-4160-9E41-8E57A8B692FB}</Project>
+      <Name>HealthTracker.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthTracker.Infrastructure\HealthTracker.Infrastructure.csproj">
+      <Project>{B268B52E-1894-4E61-B4D2-1EAB648597BE}</Project>
+      <Name>HealthTracker.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="HealthTracker.DailyLog.Views.DailyLogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             xmlns:prism="http://www.codeplex.com/prism"
+             xmlns:inf="clr-namespace:HealthTracker.Infrastructure;assembly=HealthTracker.Infrastructure"
+             d:DesignHeight="480"
+             d:DesignWidth="640">
+  <DockPanel>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"></RowDefinition>
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+
+      <Border Grid.Column="0"
+              Grid.Row="0"
+              Style="{StaticResource ResourceKey=MainBorderStyle}">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+
+          <Grid Grid.Row="0"
+                Grid.Column="0"
+                VerticalAlignment="Stretch"
+                MaxWidth="200">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="*"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Calendar Grid.Row="0"
+                      Margin="5"
+                      SelectedDate="{Binding Path=CurrentDate}"></Calendar>
+
+            <TreeView ItemsSource="{Binding Path=DailyLogNodes}"
+                      x:Name="dailyLogTreeView"
+                      Grid.Row="1"
+                      Margin="5"
+                      MinWidth="150"
+                      ItemContainerStyle="{StaticResource ResourceKey=StandardTreeViewItem}">
+            </TreeView>
+
+            <StackPanel Grid.Row="2"
+                        Orientation="Horizontal"
+                        Margin="5">
+              <TextBlock Margin="0">Total Calories:</TextBlock>
+              <TextBlock Margin="5,0"
+                         Text="{Binding Path=Calories}"></TextBlock>
+            </StackPanel>
+
+            <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       Margin="5">Food Groups:</TextBlock>
+            <DataGrid x:Name="foodGroupServingsGrid"
+                      Grid.Row="4"
+                      Grid.Column="0"
+                      ItemsSource="{Binding Path=FoodGroupServings}"
+                      AutoGenerateColumns="False"
+                      MinHeight="100"
+                      MaxHeight="100"
+                      Margin="5"
+                      IsReadOnly="True">
+              <DataGrid.Columns>
+                <DataGridTextColumn Header="Food Group"
+                                    Width="*"
+                                    Binding="{Binding Path=Entity.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Quantity"
+                                    Width="Auto"
+                                    Binding="{Binding Path=Quantity}"></DataGridTextColumn>
+              </DataGrid.Columns>
+            </DataGrid>
+
+
+            <Button x:Name="AddButton"
+                    Margin="5"
+                    Grid.Row="5"
+                    Content="Add"
+                    Command="{Binding Path=ShowMealCommand}">
+            </Button>
+          </Grid>
+
+          <GridSplitter Grid.Row="0"
+                        Grid.Column="1"
+                        VerticalAlignment="Stretch"
+                        Width="3"
+                        HorizontalAlignment="Center"></GridSplitter>
+
+          <TabControl IsSynchronizedWithCurrentItem="True"
+                      ItemContainerStyle="{StaticResource ResourceKey=ClosableTabItemStyle}"
+                      Grid.Row="0"
+                      Grid.Column="2"
+                      Margin="2"
+                      prism:RegionManager.RegionName="{x:Static inf:RegionNames.DailyLogTabsRegion}" />
+        </Grid>
+      </Border>
+
+    </Grid>
+  </DockPanel>
+</UserControl>

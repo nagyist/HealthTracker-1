@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+No Food Items Test Data
+
+A copy of the full test data without Food Items or Meal Templates.  The only data will be Food Groups and Meal Types.
+-->
+<Data>
+  <FoodGroups>
+    <FoodGroup id="269203a1-c066-4bca-a1ca-b80dc0cb72f3"
+               name="Vegetable">
+      <description>Vegetables are good for you.  You should eat lots of them.</description>
+    </FoodGroup>
+    <FoodGroup id="45d58965-9c16-4a94-88cb-0b775cf69728"
+               name="Fruit">
+      <description>
+        Fruits are good for you.  You should eat a fair about of them.
+        Watch out for the ones that are high in sugar and low in nutritional content, however.
+      </description>
+    </FoodGroup>
+    <FoodGroup id="e024273b-a01e-4fb4-a535-e3dc632be5e4"
+               name="Meat">
+      <description>Lean meat is generally the best.</description>
+    </FoodGroup>
+    <FoodGroup id="05f8dfc3-436f-42a1-a006-64c301c79640"
+               name="Dairy">
+      <description>Mostly stuff from cows.</description>
+    </FoodGroup>
+    <FoodGroup id="bb89556f-8c6c-4f14-8a47-9adf84a71bde"
+               name="Grain">
+      <description>Breads, Rice, etc.</description>
+    </FoodGroup>
+    <FoodGroup id="57ee9b15-46e8-4be4-a22a-2cbd8e8f359b"
+               name="Water">
+    </FoodGroup>
+  </FoodGroups>
+  <MealTypes>
+    <MealType id="47AB9DB8-83A3-41D8-BCE7-81F42D45FBC9"
+              datetime="2011-08-01 06:00:00 AM"
+              useDefaultDatetime="True"
+              name="Breakfast">
+      <description>The most important meal of the day.</description>
+    </MealType>
+    <MealType id="176b6819-8aae-4bf7-a3d9-83ad4d39ea2e"
+              datetime="2011-08-01 12:00:00 PM"
+              useDefaultDatetime="True"
+              name="Lunch">
+    </MealType>
+    <MealType id="a832aa99-722a-4619-87f0-7214db172221"
+              datetime="2011-08-01 06:00:00 PM"
+              useDefaultDatetime="True"
+              name="Dinner">
+      <description></description>
+    </MealType>
+    <MealType id="c466b59b-ccba-4929-97f9-b3bc274dea04"
+              datetime="2011-08-01 06:00:00 AM"
+              useDefaultDatetime="False"
+              name="Snack">
+      <description>Limit these and make them healthy.</description>
+    </MealType>
+  </MealTypes>
+</Data>

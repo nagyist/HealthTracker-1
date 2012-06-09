@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <FoodGroups>
+    <FoodGroup id="269203a1-c066-4bca-a1ca-b80dc0cb72f3"
+               name="Vegetable">
+      <description>Vegetables are good for you.  You should eat lots of them.</description>
+    </FoodGroup>
+    <FoodGroup id="45d58965-9c16-4a94-88cb-0b775cf69728"
+               name="Fruit">
+      <description>
+        Fruits are good for you.  You should eat a fair about of them.
+        Watch out for the ones that are high in sugar and low in nutritional content, however.
+      </description>
+    </FoodGroup>
+    <FoodGroup id="e024273b-a01e-4fb4-a535-e3dc632be5e4"
+               name="Meat">
+      <description>Lean meat is generally the best.</description>
+    </FoodGroup>
+    <FoodGroup id="05f8dfc3-436f-42a1-a006-64c301c79640"
+               name="Dairy">
+      <description>Mostly stuff from cows.</description>
+    </FoodGroup>
+    <FoodGroup id="bb89556f-8c6c-4f14-8a47-9adf84a71bde"
+               name="Grain">
+      <description>Breads, Rice, etc.</description>
+    </FoodGroup>
+    <FoodGroup id="57ee9b15-46e8-4be4-a22a-2cbd8e8f359b"
+               name="Water">
+    </FoodGroup>
+    <FoodGroup id="5bbcff09-ae21-4753-b562-6fb435824001"
+               name="Junk Food">
+      <description>Eat as little of this as possible.</description>
+    </FoodGroup>
+  </FoodGroups>
+  <FoodItems>
+    <FoodItem id="4082072e-d6fd-4522-9535-d2fd6528a6be"
+              name="Deluxe Bacon Cheese Burger"
+              calories="650">
+      <description>
+        Ground up cow, topped with curdled milk and salted pig fat.  Add lettuce, tomato, and onion for health.
+      </description>
+      <FoodGroupServings>
+        <!--Meat-->
+        <Serving foodGroupId="e024273b-a01e-4fb4-a535-e3dc632be5e4"
+                 quantity="1.5">
+        </Serving>
+        <!--Dairy-->
+        <Serving foodGroupId="05f8dfc3-436f-42a1-a006-64c301c79640"
+                 quantity="1">
+        </Serving>
+        <!--Grain-->
+        <Serving foodGroupId="bb89556f-8c6c-4f14-8a47-9adf84a71bde"
+                 quantity="1">
+        </Serving>
+        <!--Vegetable-->
+        <Serving foodGroupId="269203a1-c066-4bca-a1ca-b80dc0cb72f3"
+                 quantity="0.5">
+        </Serving>
+      </FoodGroupServings>
+    </FoodItem>
+    <FoodItem id="58af2a07-aae6-4f3d-8503-92c8f133fc37"
+              name="Fruit Salad"
+              calories="150">
+      <FoodGroupServings>
+        <Serving foodGroupId="45d58965-9c16-4a94-88cb-0b775cf69728"
+                 quantity="2.0">
+        </Serving>
+      </FoodGroupServings>
+    </FoodItem>
+    <FoodItem id="46d04859-f95d-4ed6-9697-3e8a15c0bc91"
+              name="Glass of Skim Milk"
+              calories="90">
+      <FoodGroupServings>
+        <Serving foodGroupId="05f8dfc3-436f-42a1-a006-64c301c79640"
+                 quantity="2.0">
+        </Serving>
+      </FoodGroupServings>
+    </FoodItem>
+    <FoodItem id="7fa82225-2870-4ab8-92f2-76df3fcb0632"
+              name="Glass of Water"
+              calories="0">
+      <FoodGroupServings>
+        <Serving foodGroupId="57ee9b15-46e8-4be4-a22a-2cbd8e8f359b"
+                 quantity="2.0">
+        </Serving>
+      </FoodGroupServings>
+      <description>A glass of water, no sugar</description>
+    </FoodItem>
+    <FoodItem id="d29701af-a487-466d-b752-34a6ae7269cd"
+              name="Baby Carrots"
+              calories="40">
+      <FoodGroupServings>
+        <Serving foodGroupId="269203a1-c066-4bca-a1ca-b80dc0cb72f3"
+                 quantity="1.0">
+        </Serving>
+      </FoodGroupServings>
+      <description></description>
+    </FoodItem>
+  </FoodItems>
+  <MealTypes>
+    <MealType id="47AB9DB8-83A3-41D8-BCE7-81F42D45FBC9"
+              datetime="2010-07-18 06:00:00 AM"
+              useDefaultDatetime="True"
+              name="Breakfast">
+      <description>The most important meal of the day.</description>
+    </MealType>
+    <MealType id="176b6819-8aae-4bf7-a3d9-83ad4d39ea2e"
+              datetime="2010-07-18 12:00:00 PM"
+              useDefaultDatetime="True"
+              name="Lunch">
+    </MealType>
+    <MealType id="a832aa99-722a-4619-87f0-7214db172221"
+              datetime="2010-07-18 06:00:00 PM"
+              useDefaultDatetime="True"
+              name="Dinner">
+      <description></description>
+    </MealType>
+    <MealType id="c466b59b-ccba-4929-97f9-b3bc274dea04"
+              datetime="2010-07-18 00:00:00 AM"
+              useDefaultDatetime="False"
+              name="Snack">
+      <description>Limit these and make them healthy.</description>
+    </MealType>
+  </MealTypes>
+  <MealTemplates>
+    <!--
+    This meal consists of:
+       1.5 Deluxe Bacon Cheese Burgers
+          2.25 meat
+          1.5 dairy
+          1.5 grain
+          0.75 veggie
+          975 calories
+          
+       1 Baby Carrots
+          1 veggie
+          40 calories
+          
+       2.5 Milk
+          5 dairy
+          225 calories
+          
+    Totals:
+       2.25 meat
+       6.5 dairy
+       1.5 grain
+       1.75 veggie
+       1240 calories
+    -->
+    <Meal id="b59490be-da57-495d-a03c-18893fb1e065"
+          mealTypeId="176b6819-8aae-4bf7-a3d9-83ad4d39ea2e"
+          datetime="2010-07-16T19:20-06:00"
+          name="Cheeseburger Lunch">
+      <description>A typical cheese burger based lunch.</description>
+      <FoodItemServings>
+        <!--Deluxe Bacon Cheese Burger-->
+        <Serving foodItemId="4082072e-d6fd-4522-9535-d2fd6528a6be"
+                 quantity="1.5"></Serving>
+        <!--Baby Carrots-->
+        <Serving foodItemId="d29701af-a487-466d-b752-34a6ae7269cd"
+                 quantity="1.0"></Serving>
+        <!--Glass of Skim Milk-->
+        <Serving foodItemId="46d04859-f95d-4ed6-9697-3e8a15c0bc91"
+                 quantity="2.5"></Serving>
+      </FoodItemServings>
+    </Meal>
+  </MealTemplates>
+</Data>
