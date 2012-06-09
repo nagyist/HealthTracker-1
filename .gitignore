@@ -1,3 +1,4 @@
 obj/
 [Bb]in/
 TestResults/
+*.suo
