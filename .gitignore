@@ -2,3 +2,4 @@ obj/
 [Bb]in/
 TestResults/
 *.suo
+*.user
